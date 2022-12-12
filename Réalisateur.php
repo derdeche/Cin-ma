@@ -13,11 +13,12 @@ public function __construct($nom, $prenom, $sexe, $datenaissance)
     $this->_films = [];
 }
 
-public function addTitrefilm($film)
+public function addFilm($film)
 {   
  
     $this->_films[]= $film;
 } 
+
 
 
 
