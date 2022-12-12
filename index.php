@@ -18,3 +18,9 @@ Lister la filmographie d'un réalisateur (quels sont les films qu'a réalisé ce
 
 <?php
 
+require_once "film.php";
+require_once "Genre.php";
+require_once "Réalisateur.php";
+require_once "personne.php";
+
+
