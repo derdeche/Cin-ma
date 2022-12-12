@@ -9,13 +9,19 @@ class Réalisateur
     private array $_titrefilm;
 
 
-public function __construct($nom, $sexe, $datenaissance, $titrefilm)
+public function __construct($nom, $prenom, $sexe, $datenaissance, $titrefilm)
 {
     $this->_nom = $nom;
     $this->_prenom = $prenom;
     $this->_datenaissance = $datenaissance;
     $this->_titrefilm = [];
 }
+
+public function addTitrefilm($titrefilm)
+{   
+ 
+    $this->_titrefilm[]= $titrefilm;
+} 
 
 public function getNom()
 {
