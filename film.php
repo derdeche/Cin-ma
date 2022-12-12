@@ -6,9 +6,9 @@ class film
     private string $_datesortie;
     private int $_duree;
     private Réalisateur $_unirealisateur;
-    private string $_genre;
+    private genre $_genre;
 
-}
+
 
 public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre)
 {
@@ -66,4 +66,5 @@ public function setUnirealisateur($unirealisateur)
 public function __tostring()
 {
     return  $this->_titrefilm;
+}
 }
