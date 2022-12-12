@@ -20,7 +20,15 @@ Lister la filmographie d'un réalisateur (quels sont les films qu'a réalisé ce
 
 require_once "film.php";
 require_once "Genre.php";
+require_once "Personne.php";
 require_once "Réalisateur.php";
-require_once "personne.php";
 
+
+$real1 = new Réalisateur('Prenom', 'nom', 'male', '1988-12-12');
+
+$action = new Genre ('action');
+
+$film1 = new Film('TIIIITERR', '2000-12-12', 45, $real1, $action);
+
+echo $film1;
 
