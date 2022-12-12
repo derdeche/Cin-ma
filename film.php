@@ -6,8 +6,7 @@ class film
     private string $_datesortie;
     private int $_duree;
     private Réalisateur $_unirealisateur;
-    private genre $_genre;
-
+    private Genre $_genre;
 
 
 public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre)
@@ -16,7 +15,9 @@ public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $g
     $this->_datesortie = $datesortie;
     $this->_duree = $duree;
     $this->_unirealisateur = $unirealisateur;
-    $this->unirealisateur->addFilm($this);
+    $this->_genre = $genre;
+    $this->_unirealisateur->addFilm($this);
+    $this->_genre->addFilm($this);
 }
 
 public function getTitrefilm()
@@ -43,7 +44,7 @@ public function setDatesortie($datesortie)
 
 public function getDuree()
 {
-    return $this->_Duree;
+    return $this->_duree;
 }
 
 public function setDuree($duree)
@@ -63,8 +64,35 @@ public function setUnirealisateur($unirealisateur)
     return $this;
 }
 
+public function getGenre()
+{
+    return $this->_genre;
+}
+
+public function setGenre($genre)
+{
+    $this->_genre = $genre;
+    return $this;
+}
+
 public function __tostring()
 {
     return  $this->_titrefilm;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
