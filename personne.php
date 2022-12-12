@@ -1,12 +1,21 @@
 <?php
 
-class personne
+class Personne
 {
     private $_nom;
     private string $_prenom;
     private string $_sexe;
-    private int $_datenaissance;
+    private string $_datenaissance;
 
+
+    public function __construct(string $nom, string $prenom, string $sexe, string $datenaissance)
+    {
+        $this->_nom = $nom;
+        $this->_prenom = $prenom;
+        $this->_sexe = $sexe;
+        $this->_datenaissance = $datenaissance;
+    
+    }
 
 public function getNom()
 {
@@ -26,7 +35,7 @@ public function getPrenom()
 
 public function setPrenom($prenom)
 {
-    $this->_prenom = $pernom;
+    $this->_prenom = $prenom;
     return $this;
 }
 
