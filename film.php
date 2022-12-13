@@ -77,20 +77,8 @@ public function setGenre($genre)
 
 public function __tostring()
 {
-    return  $this->_titrefilm;
+    return "titre du film : ". $this->_titrefilm ." Date de sortie :  ". $this->_datesortie." Durée :  " .$this->getDuree()." " .$this->getUnirealisateur();
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
