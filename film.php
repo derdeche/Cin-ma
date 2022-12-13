@@ -7,9 +7,10 @@ class film
     private int $_duree;
     private Réalisateur $_unirealisateur;
     private Genre $_genre;
+    private Casting $_casting;
 
 
-public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre)
+public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre,$casting)
 {
     $this->_titrefilm = $titrefilm;
     $this->_datesortie = $datesortie;
@@ -18,6 +19,7 @@ public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $g
     $this->_genre = $genre;
     $this->_unirealisateur->addFilm($this);
     $this->_genre->addFilm($this);
+    $this->_casting->addFilm($this);
 }
 
 public function getTitrefilm()
