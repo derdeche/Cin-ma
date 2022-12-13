@@ -26,12 +26,17 @@ require_once "role.php";
 require_once "acteur.php";
 require_once "Casting.php";
 
+//Listes Réalisateurs//
 
-
-
-$real1 = new Réalisateur('Tim ', ' Burton ', ' male ', '25 août 1958');
-$real2 = new Réalisateur('Joel ', ' Schumacher ', ' male ', '29 août 1939' );
-$real3 = new Réalisateur('Christopher ', '  Nolan ', ' male ', '30 juillet 1970' );
+$real1 = new Réalisateur(' Tim ', ' Burton ', ' male ', ' 25 août 1958 ');
+$real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' );
+$real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );
+$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );
+$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );
+$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );
+$real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );
+$real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );
+$real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );
 
 
 $action = new Genre ('action');
