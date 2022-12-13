@@ -13,4 +13,8 @@ public function __construct($film, $role, $acteur)
     $this->_acteur = $acteur;
 }
 
+public function getFilm()
+{
+    return $this->_film;
+}
 }
