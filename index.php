@@ -24,11 +24,12 @@ require_once "Personne.php";
 require_once "Réalisateur.php";
 
 
-$real1 = new Réalisateur('Prenom ', ' nom ', ' male ', '1988-12-12');
+$real1 = new Réalisateur('Tim ', ' Burton ', ' male ', '25 août 1958');
 
 $action = new Genre ('action');
 
-$film1 = new Film('TIIIITERR', '2000-12-12', 45, $real1, $action);
+$film1 = new Film('Batman le défi', '15 juillet 1992.', 126, $real1, $action);
 
 echo $film1;
+
 
