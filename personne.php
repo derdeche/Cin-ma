@@ -61,6 +61,11 @@ public function setDatenaissance($datenaissance)
     return $this;
 }
 
+// public function __toString()
+// {
+//     return $this->getNom(). $this->_prenom. $this->_sexe.$this->_datenaissance;
+// }
+
 
 
 
