@@ -24,7 +24,7 @@ require_once "Personne.php";
 require_once "Réalisateur.php";
 
 
-$real1 = new Réalisateur('Prenom', 'nom', 'male', '1988-12-12');
+$real1 = new Réalisateur('Prenom ', ' nom ', ' male ', '1988-12-12');
 
 $action = new Genre ('action');
 
