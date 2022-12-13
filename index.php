@@ -28,7 +28,7 @@ $real1 = new Réalisateur('Tim ', ' Burton ', ' male ', '25 août 1958');
 
 $action = new Genre ('action');
 
-$film1 = new Film('Batman le défi', '15 juillet 1992.', 126, $real1, $action);
+$film1 = new Film('Batman le défi', '15 juillet 1992.', 126, $real1, $action,$acteur1);
 
 echo $film1;
 
