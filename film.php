@@ -10,13 +10,14 @@ class film
     private Casting $_casting;
 
 
-public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre,$casting)
+public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre, $casting)
 {
     $this->_titrefilm = $titrefilm;
     $this->_datesortie = $datesortie;
     $this->_duree = $duree;
     $this->_unirealisateur = $unirealisateur;
     $this->_genre = $genre;
+    $this->_casting = $casting;
     $this->_unirealisateur->addFilm($this);
     $this->_genre->addFilm($this);
     $this->_casting->addFilm($this);
