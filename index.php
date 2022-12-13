@@ -22,9 +22,17 @@ require_once "film.php";
 require_once "Genre.php";
 require_once "Personne.php";
 require_once "Réalisateur.php";
+require_once "role.php";
+require_once "acteur.php";
+require_once "Casting.php";
+
+
 
 
 $real1 = new Réalisateur('Tim ', ' Burton ', ' male ', '25 août 1958');
+$real2 = new Réalisateur('Joel ', ' Schumacher ', ' male ', '29 août 1939' );
+$real3 = new Réalisateur('Christopher ', '  Nolan ', ' male ', '30 juillet 1970' );
+
 
 $action = new Genre ('action');
 
