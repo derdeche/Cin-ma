@@ -19,7 +19,10 @@ public function addFilm($film)
     $this->_films[]= $film;
 } 
 
-
+public function __toString()
+{
+    return $this->getNom(). $this->getPrenom(). $this->getSexe().$this->getDatenaissance();
+}
 
 
 
