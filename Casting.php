@@ -11,7 +11,8 @@ public function __construct($role, $acteur)
     $this->_role = $role;
     $this->_acteur = $acteur;
     $this->_film = [];
-    
+    $this->_acteur->addFilm($this);
+    $this->_role->addFilm($this);    
 }
 
 public function addFilm($film)
