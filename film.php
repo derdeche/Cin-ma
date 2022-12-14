@@ -23,6 +23,7 @@ public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $g
     $this->_casting->addFilm($this);
 }
 
+
 public function getTitrefilm()
 {
     return $this->_titrefilm;

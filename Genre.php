@@ -5,9 +5,9 @@ class genre
     private array $_films;
     
     
-    public function __construct($_nomGenre)
+    public function __construct($nomGenre)
     {
-        $this->_nomGenre = $_nomGenre;
+        $this->_nomGenre = $nomGenre;
         $this->_films = [];
     }
     
@@ -15,7 +15,7 @@ class genre
    {
         $this->_films[] = $film
    }
-   
+
     public function getnomGenre()
     {
         return $this->_nomGenre;
