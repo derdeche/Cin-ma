@@ -17,7 +17,7 @@ class film
         $this->_duree = $duree;
         $this->_unirealisateur = $unirealisateur;
         $this->_genre = $genre;
-        $this->_casting = $casting;
+        $this->_casting = [];
         $this->_unirealisateur->addFilm($this);
         $this->_genre->addFilm($this);
         $this->_casting->addFilm($this);
