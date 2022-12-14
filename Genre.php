@@ -11,6 +11,10 @@ class genre
         $this->_films = [];
     }
     
+   public function addFilm($film)
+   {
+        $this->_films[] = $film
+   }
    
     public function getnomGenre()
     {
