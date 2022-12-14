@@ -9,24 +9,29 @@ class film
     private Genre $_genre;
     private array $_casting;
 
-
-public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre, $casting)
-{
-    $this->_titrefilm = $titrefilm;
-    $this->_datesortie = $datesortie;
-    $this->_duree = $duree;
-    $this->_unirealisateur = $unirealisateur;
-    $this->_genre = $genre;
-    $this->_casting = $casting;
-    $this->_unirealisateur->addFilm($this);
-    $this->_genre->addFilm($this);
-    $this->_casting->addFilm($this);
-}
-
-
-public function getTitrefilm()
-{
-    return $this->_titrefilm;
+    
+    public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre, $casting)
+    {
+        $this->_titrefilm = $titrefilm;
+        $this->_datesortie = $datesortie;
+        $this->_duree = $duree;
+        $this->_unirealisateur = $unirealisateur;
+        $this->_genre = $genre;
+        $this->_casting = $casting;
+        $this->_unirealisateur->addFilm($this);
+        $this->_genre->addFilm($this);
+        $this->_casting->addFilm($this);
+    }
+    
+    public function addCasting($casting)
+    {
+        $this->_casting[] = $casting;
+        return $this;
+    }
+    
+    public function getTitrefilm()
+    {
+        return $this->_titrefilm;
 }
 
 public function setTitrefilm($titrefilm)
@@ -84,11 +89,6 @@ public function __tostring()
     return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
 }
 
-public function addCasting($casting)
-{
-    $this->_casting[] = $casting;
-    return $this;
-}
 
 
 }
