@@ -14,6 +14,7 @@ class genre
    public function addFilm($film)
    {
         $this->_films[] = $film
+        return $this;
    }
 
     public function getnomGenre()
@@ -29,12 +30,12 @@ class genre
         return $this;
     }
 
-    public function addFilm($film)
+    public function __toString()
     {
-        $this->_films[]= $film;
+        return $this->getnomGenre();
     }
 
-     
+    
     
 
 

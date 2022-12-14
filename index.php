@@ -38,6 +38,8 @@ $real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );
 $real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );
 $real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );
 
+$acteur1 = new Acteur ('')
+
 
 $action = new Genre ('action');
 
