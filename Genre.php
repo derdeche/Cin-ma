@@ -1,13 +1,13 @@
 <?php
 class genre 
 {
-    private string $_nomGenre;
+    private string $_Genre;
     private array $_films;
     
     
-    public function __construct($nomGenre)
+    public function __construct($Genre)
     {
-        $this->_nomGenre = $nomGenre;
+        $this->_Genre = $Genre;
         $this->_films = [];
     }
     
@@ -17,22 +17,22 @@ class genre
         return $this;
    }
 
-    public function getnomGenre()
+    public function getGenre()
     {
-        return $this->_nomGenre;
+        return $this->_Genre;
     }
     
    
-    public function setnomGenre($_nomGenre)
+    public function setGenre($_Genre)
     {
-        $this->_nomGenre = $_nomGenre;
+        $this->_nomGenre = $_Genre;
     
         return $this;
     }
 
     public function __toString()
     {
-        return $this->getnomGenre();
+        return $this->getGenre();
     }
 
     
