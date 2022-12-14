@@ -32,7 +32,7 @@ public function __toString()
 {
     return "Le role joué est ".$this->getRole();
 }
-{
+
 
 
 
