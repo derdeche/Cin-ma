@@ -7,7 +7,7 @@ class film
     private int $_duree;
     private Réalisateur $_unirealisateur;
     private Genre $_genre;
-    private Casting $_casting;
+    private array $_casting;
 
 
 public function __construct($titrefilm, $datesortie, $duree, $unirealisateur, $genre, $casting)
@@ -84,7 +84,11 @@ public function __tostring()
     return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
 }
 
-
+public function addCasting($casting)
+{
+    $this->_casting[] = $casting;
+    return $this;
+}
 
 
 }
