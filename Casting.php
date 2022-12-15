@@ -46,6 +46,11 @@ public function __toString()
     return "L'acteur". $this->getActeur() . "a joué le role de " . $this->getRole() ."dans". $this->getFilm();
 }
 
+public function getCasting()
+{
+    return "Dans le film".$this->getFilm()."L'acteur". $this->getActeur() . "a joué le role de " . $this->getRole() ."dans". $this->getFilm();
+}
+
 
 
 
