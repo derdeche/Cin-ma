@@ -2,20 +2,20 @@
 class acteur extends Personne
 {
 
-    private array $_films;
+    private array $_casting;
 
 
 public function __construct($nom,$prenom, $sexe, $datenaissance)
 {
     parent::__construct($nom,$prenom, $sexe, $datenaissance);
 
-    $this->_films = [];
+    $this->_casting = [];
 }
 
-public function addFilm($film)
+public function addCasting($casting)
 {   
  
-    $this->_films[]= $film;
+    $this->_casting[]= $casting;
 } 
 
 public function getNom()
@@ -49,9 +49,11 @@ public function __toString()
 
 public function afficherActeur()
 {
-    echo "l acteur"."<br>";
-    foreach($this->_films as $film)
+    echo "l acteur".$this."<br>";
+    foreach($this->_casting as $casting)
     {
-return $film.
+    echo $casting->getFilm()->getRole()."<br>";
+    }
+
 }
 }
