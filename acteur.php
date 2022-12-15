@@ -1,5 +1,5 @@
 <?php
-class acteur extends Personne
+class Acteur extends Personne
 {
 
     private array $_casting;
@@ -52,7 +52,7 @@ public function afficherActeur()
     echo "l acteur".$this."<br>";
     foreach($this->_casting as $casting)
     {
-    echo $casting->getFilm()->getRole()."<br>";
+    echo $casting->getRole()->getActeur()->getFilm()."<br>";
     }
 
 }
