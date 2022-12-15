@@ -39,11 +39,7 @@ public function getRole()
     return $this->_role;
 }
 
-public function setRole()
-{
-    $this->_role = $role;
-    return $this;
-}
+
 public function getActeur()
 {
     return $this->_acteur;

@@ -36,6 +36,8 @@ public function afficherCasting()
     {
         echo $casting."<br>";
     }
+
+    
  
     
   
