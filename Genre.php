@@ -23,12 +23,6 @@ class genre
     }
     
    
-    public function setGenre($_Genre)
-    {
-        $this->_nomGenre = $_Genre;
-    
-        return $this;
-    }
 
     public function __toString()
     {
