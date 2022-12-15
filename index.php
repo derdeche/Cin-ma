@@ -42,10 +42,20 @@ $real1 = new Réalisateur(' Tim ', ' Burton ', ' male ', ' 25 août 1958 ');
 /*$film3 = new film ('Batman et Robin ','20 juin 1997','125',$real2,$genre3, $acteur3);*/
 /*$film4 = new film ('Batman Begins ', '15 juin 2005' ,'140',$real3,$genre4, $acteur4);*/
 
+$acteur1 = new acteur (' Michael ',' Keaton ', 'Male','5 septembre 1951');
+
 $genre1 = new genre('Action');
 $role1 = new role('Batman');
-$film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1,$casting1);
+$film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $acteur1);
+$genre1 = new genre('Action');
 $casting1 = new Casting($role1,$acteur1,$film1);
+
+
+
+/*$acteur1->afficherActeur();*/
+/*echo $film1->getInfofilm();*/
+/*$casting1->getCasting();*/
+$film1->afficherInfo();
 
 
 
