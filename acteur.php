@@ -46,4 +46,12 @@ public function __toString()
 {
     return $this->getNom()." ".$this->getPrenom()." ".$this->getSexe()." ".$this->getDatenaissance();
 }
+
+public function afficherActeur()
+{
+    echo "l acteur"."<br>";
+    foreach($this->_films as $film)
+    {
+return $film.
+}
 }
