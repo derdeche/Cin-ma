@@ -3,16 +3,17 @@ class casting
 {
     private role $_role;
     private acteur $_acteur;
-    private array $_film;
+    private film $_film;
     
 
-public function __construct($role, $acteur)
+public function __construct($role, $acteur,$film)
 {
     $this->_role = $role;
     $this->_acteur = $acteur;
-    $this->_film = [];
-    $this->_acteur->addFilm($this);
-    $this->_role->addFilm($this);    
+    $this->_film = $film;
+    $this->_film->addCasting($this);
+    $this->_acteur->addCasting($this);
+    $this->_role->addCasting($this);    
 }
 
 public function addFilm($film)
