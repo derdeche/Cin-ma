@@ -89,6 +89,26 @@ public function __tostring()
     return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
 }
 
+public function afficherinfo()
+{
+    echo $this;
+    foreach ($this->_casting as $casting)
+{
+        echo $casting."<br>";
+    
+}
+
+    
+
+
+    
+       
+       
+       
+       
+    
+}
+
 
 
 }
