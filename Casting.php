@@ -28,12 +28,6 @@ public function getFilm()
     return $this->_film;
 }
 
-public function setFilm($film)
-{
-    $this->_film = $film;
-    return $this;
-}
-
 public function getRole()
 {
     return $this->_role;
@@ -45,11 +39,7 @@ public function getActeur()
     return $this->_acteur;
 }
 
-public function setActeur($acteur)
-{
-    $this->_acteur = $acteur;
-    return $this;
-}
+
 
 public function __toString()
 {
