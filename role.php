@@ -1,6 +1,6 @@
 <?php
 
-class role 
+class Role 
 {
     private $_role;
     private array $_casting;

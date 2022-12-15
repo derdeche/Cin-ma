@@ -1,5 +1,5 @@
 <?php
-class genre 
+class Genre 
 {
     private string $_Genre;
     private array $_films;
