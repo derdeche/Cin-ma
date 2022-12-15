@@ -13,7 +13,7 @@ class genre
     
    public function addFilm($film)
    {
-        $this->_films[] = $film
+        $this->_films[] = $film;
         return $this;
    }
 
