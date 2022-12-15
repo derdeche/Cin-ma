@@ -16,12 +16,6 @@ public function __construct($role, $acteur,$film)
     $this->_role->addCasting($this);    
 }
 
-public function addFilm($film)
-{   
- 
-    $this->_films[]= $film;
-} 
-
 
 public function getFilm()
 {
