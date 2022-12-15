@@ -29,22 +29,34 @@ require_once "Casting.php";
 //Listes Réalisateurs//
 
 $real1 = new Réalisateur(' Tim ', ' Burton ', ' male ', ' 25 août 1958 ');
-$real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' );
-$real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );
-$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );
-$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );
-$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );
-$real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );
-$real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );
-$real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );
+/*$real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' );*/
+/*$real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );*/
+/*$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );*/
+/*$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );*/
+/*$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );*/
+/*$real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );*/
+/*$real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );*/
+/*$real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );*/
 
-$acteur1 = new Acteur ('')
+/*$film2 = new film ('Batman Forever ','19 juillet 1995','122',$real2,$genre2, $acteur2);*/
+/*$film3 = new film ('Batman et Robin ','20 juin 1997','125',$real2,$genre3, $acteur3);*/
+/*$film4 = new film ('Batman Begins ', '15 juin 2005' ,'140',$real3,$genre4, $acteur4);*/
+
+$genre1 = new genre('Action');
+$role1 = new role('Batman');
+$film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1,$casting1);
+$casting1 = new Casting($role1,$acteur1,$film1);
 
 
-$action = new Genre ('action');
 
-$film1 = new Film('Batman le défi', '15 juillet 1992.', 126, $real1, $action,$acteur1);
 
-echo $film1;
+
+
+
+
+
+
+
+
 
 
