@@ -26,12 +26,13 @@ public function __toString()
 
 public function afficherfilm()
 {
-    echo 'le réalisateur'. $this. 'a joué dans'."<br>";
+    echo 'l acteur'. $this. 'a joué dans'."<br>";
     foreach($this->_films as $film)
     {
         echo $film."<br>";
     }
 }
+
 
 
 }
