@@ -1,6 +1,6 @@
 <?php
 
-class film
+class Film
 {
     private string $_titrefilm;
     private string $_datesortie;
@@ -57,6 +57,11 @@ public function getUnirealisateur()
 public function getGenre()
 {
     return $this->_genre;
+}
+
+public function getInfofilm()
+{
+    return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
 }
 
 
