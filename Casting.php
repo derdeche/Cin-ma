@@ -1,5 +1,5 @@
 <?php
-class casting
+class Casting
 {
     private role $_role;
     private acteur $_acteur;
