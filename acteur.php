@@ -18,42 +18,28 @@ public function addCasting($casting)
     $this->_casting[]= $casting;
 } 
 
-public function getNom()
-{
-    return $this->_nom;
-}
-
-
-public function getPrenom()
-{
-    return $this->_prenom;
-}
-
-
-public function getSexe()
-{
-    return $this->_sexe;
-}
-
-
-public function getDatenaissance()
-{
-    return $this->_datenaissance;
-}
-
 
 public function __toString()
 {
     return $this->getNom()." ".$this->getPrenom()." ".$this->getSexe()." ".$this->getDatenaissance();
 }
 
-public function afficherActeur()
-{
-    echo "l acteur".$this."<br>";
-    foreach($this->_casting as $casting)
-    {
-    echo $casting->getRole()->getActeur()->getFilm()."<br>";
+
+public function afficherActeur(){
+
+    echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a joué au film :<br>";
+
+    foreach($this->_casting as $casting){
+
+        echo $casting->getFilm()." dans lequel il incarne " .$casting->getRole()."<br>";
+
     }
 
-}
+}  
+    
+ 
+ 
+    
+
+
 }
