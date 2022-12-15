@@ -21,13 +21,26 @@ class genre
     {
         return $this->_Genre;
     }
-    
-   
+       
 
     public function __toString()
     {
         return $this->getGenre();
     }
+
+    public function afficherGenre()
+    {
+        echo 'le film du genre'. $this;
+        foreach($this->_films as $film)
+        {
+            echo $film."<br>";
+        }
+    }
+
+      
+
+
+
 
     
     
