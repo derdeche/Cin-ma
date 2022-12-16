@@ -60,9 +60,9 @@ $film3 = new film ('Batman et Robin ','20 juin 1997',125,$real2,$genre2, $acteur
 $film4 = new film ('Batman Begins ','15 juin 2005',140,$real3,$genre2,$acteur3);
 
 $casting1 = new Casting($role1,$acteur1,$film1);
-$casting2 = new casting($role1,$acteur2,$film2);
+$casting2 = new casting($role1,$acteur1,$film2);
 $casting3 = new Casting($role1,$acteur3,$film3);
-$casting = new Casting($role1,$acteur4,$film4);
+$casting4 = new Casting($role1,$acteur4,$film4);
 
 
 
