@@ -59,18 +59,17 @@ public function getGenre()
     return $this->_genre;
 }
 
-public function getInfofilm()
+/*public function getInfofilm()
 {
     return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
-}
-
+}*/
 
 
 public function __tostring()
 {
-    return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
-}
+    return  $this->_titrefilm ."<br>";
 
+}
 public function afficherInfo()
 {
     echo $this;
