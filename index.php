@@ -53,7 +53,7 @@ $role1 = new role('Batman');
 $role2 = new role('Batman');
 
 $film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $acteur1);
-$film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre2, $acteur2);
+$film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur2);
 
 $casting1 = new Casting($role1,$acteur1,$film1);
 $casting2 = new casting($role2,$acteur2,$film2);
