@@ -30,7 +30,7 @@ class Genre
 
     public function afficherGenre()
     {
-        echo 'le film du genre'. $this;
+        echo 'le film est du genre '. $this;
         foreach($this->_films as $film)
         {
             echo $film."<br>";
