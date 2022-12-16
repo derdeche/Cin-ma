@@ -19,15 +19,15 @@ class Acteur extends Personne
 } 
 
 
-    public function __toString()
+ /*   public function __toString()
 {
     return $this->getNom()." ".$this->getPrenom()." ".$this->getSexe()." ".$this->getDatenaissance();
-}
+}*/
 
 
     public function afficherActeur(){
 
-    echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a joué au film :<br>";
+    echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a joué dans le film :<br>";
 
     foreach($this->_casting as $casting)
     {
