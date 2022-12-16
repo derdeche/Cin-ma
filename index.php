@@ -56,31 +56,36 @@ $film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $a
 $film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur2);
 
 $casting1 = new Casting($role1,$acteur1,$film1);
-$casting2 = new casting($role2,$acteur2,$film2);
+$casting2 = new casting($role1,$acteur1,$film2);
 
 
 
-/*$acteur1->afficherActeur();*/
+
+
 
 
 /*$acteur1->afficherfilm();*/
-/*echo $film1->getInfofilm();*/
+echo $film1->getInfofilm();
+echo"----------------------------------------------"."<br>";
+$real1->afficherfilm();
+echo"----------------------------------------------"."<br>";
+echo $film2->getInfofilm();
+echo"----------------------------------------------"."<br>";
+$real2->afficherfilm();
+echo"----------------------------------------------"."<br>";
+$acteur1->afficherActeur();
+echo "--------------------------------------------"."<br>";
+/*$casting1->getCasting();
+/*$genre2->afficherGenre();
+$acteur2->afficherActeur();*/
+echo "--------------------------------------------";
+
 /*$casting1->getCasting();*/
 /*$film1->afficherInfo();*/
 /*$genre1->afficherGenre();*/
-$real1->afficherfilm();
-$casting1->getCasting();
-$genre1->afficherGenre();
-$acteur1->afficherActeur();
-echo "--------------------------------------------"."<br>";
 
-$real2->afficherfilm();
-$casting2->getCasting();
-$genre2->afficherGenre();
-$acteur2->afficherActeur();
-echo "--------------------------------------------";
-
-
+/*$casting1->getCasting();*/
+/*$genre1->afficherGenre();*/
 
 
 
