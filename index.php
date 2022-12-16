@@ -30,7 +30,7 @@ require_once "Casting.php";
 
 $real1 = new Réalisateur(' Tim ', ' Burton ', ' male ', ' 25 août 1958 ');
 $real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' );
-/*$real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );*/
+$real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );
 /*$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );*/
 /*$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );*/
 /*$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );*/
@@ -43,20 +43,26 @@ $real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' 
 /*$film4 = new film ('Batman Begins ', '15 juin 2005' ,'140',$real3,$genre4, $acteur4);*/
 
 $acteur1 = new acteur (' Michael ',' Keaton ', 'Male','5 septembre 1951');
-$acteur2 = new acteur ('Val ',' Kilmer ','Male','31 décembre 1959');
+$acteur2 = new acteur (' Val ',' Kilmer ','Male','31 décembre 1959');
+$acteur3 = new acteur (' George ',' Clooney ', 'Male','6 mai 1961');
+$acteur4 = new acteur ('christian',' Bale', 'Male','30 janvier 1974');
 
 $genre1 = new genre('Action');
 $genre2 = new genre('Adventure');
-$genre3 = new genre('Adventure');
+
 
 $role1 = new role('Batman');
-$role2 = new role('Batman');
+
 
 $film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $acteur1);
-$film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur2);
+$film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur1);
+$film3 = new film ('Batman et Robin ','20 juin 1997',125,$real2,$genre2, $acteur1);
+$film4 = new film ('Batman Begins ','15 juin 2005',140,$real3,$genre2,$acteur3);
 
 $casting1 = new Casting($role1,$acteur1,$film1);
 $casting2 = new casting($role1,$acteur2,$film2);
+$casting3 = new Casting($role1,$acteur3,$film3);
+$casting = new Casting($role1,$acteur4,$film4);
 
 
 
