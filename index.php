@@ -56,7 +56,7 @@ $film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $a
 $film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur2);
 
 $casting1 = new Casting($role1,$acteur1,$film1);
-$casting2 = new casting($role1,$acteur1,$film2);
+$casting2 = new casting($role1,$acteur2,$film2);
 
 
 
@@ -79,7 +79,7 @@ echo "--------------------------------------------"."<br>";
 /*$genre2->afficherGenre();
 $acteur2->afficherActeur();*/
 echo "--------------------------------------------";
-
+$role1->afficherRole();
 /*$casting1->getCasting();*/
 /*$film1->afficherInfo();*/
 /*$genre1->afficherGenre();*/
