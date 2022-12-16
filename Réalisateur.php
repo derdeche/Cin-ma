@@ -21,12 +21,12 @@ public function addFilm($film)
 
 public function __toString()
 {
-    return "Nom du Réalisateur : ". $this->getNom()."<br>"."Prénom du Réalisateur :". $this->getPrenom()."<br>"."Sexe :". $this->getSexe()."<br>"."Date de Naissance :". $this->getDatenaissance()."<br>";
+    return " du Nom :". $this->getNom()."<br>"."Prénom  :". $this->getPrenom()."<br>"."Sexe :". $this->getSexe()."<br>"."Date de Naissance :". $this->getDatenaissance()."<br>";
 }
 
 public function afficherfilm()
 {
-    echo 'l acteur'. $this. 'a joué dans'."<br>";
+    echo 'le réalisateur'. $this. 'a réalisé '." ";
     foreach($this->_films as $film)
     {
         echo $film."<br>";
