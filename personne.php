@@ -42,7 +42,7 @@ public function getDatenaissance()
 
 public function __toString()
  {
-    return $this->getNom(). $this->getPrenom(). $this->getSexe().$this->getDatenaissance();
+    return $this->getNom(). $this->getPrenom()." "."Né le". $this->getDatenaissance();
  }
 
 
