@@ -30,39 +30,13 @@ class Genre
 
     public function afficherGenre()
     {
-        echo 'le film est du genre '. $this;
+        echo 'les films du genre '. $this." "."sont : " ."<br>";
         foreach($this->_films as $film)
         {
             echo $film."<br>";
         }
     }
 
-      
-
-
-
-
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
