@@ -26,7 +26,7 @@ public function getRole()
 
 public function __toString()
 {
-    return "Le role joué est ".$this->getRole();
+    return $this->getRole();
 }
 
 public function afficherCasting()
