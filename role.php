@@ -21,7 +21,6 @@ public function getRole()
 {
     return $this->_role;
 }
- 
 
 
 public function __toString()
@@ -38,38 +37,20 @@ public function afficherCasting()
     }
 
     
- 
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+public function afficherRole(){
+
+    echo "<br> Le role  ".$this. " a été joué par :<br>";
+
+    foreach($this->_casting as $casting)
+    {
+
+        echo $casting->getActeur()."<br>";
+
+    }
+
+        
+
+} 
 }
