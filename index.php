@@ -69,22 +69,35 @@ $casting4 = new Casting($role1,$acteur4,$film4);
 
 
 
+echo "Filmograhpie du Réalisateur 1: <br>";
 
-/*$acteur1->afficherfilm();*/
 echo $film1->getInfofilm();
+
+/*$real1->afficherfilm();*/
 echo"----------------------------------------------"."<br>";
-$real1->afficherfilm();
-echo"----------------------------------------------"."<br>";
+
+echo "Filmograhpie du Réalisateur 2: <br>";
+
 echo $film2->getInfofilm();
+
 echo"----------------------------------------------"."<br>";
+
 $real2->afficherfilm();
+
 echo"----------------------------------------------"."<br>";
+
+echo " Filmograhpie de l'acteur Keaton Michael : <br>";
+
 $acteur1->afficherActeur();
+
 echo "--------------------------------------------"."<br>";
 /*$casting1->getCasting();
 /*$genre2->afficherGenre();
 $acteur2->afficherActeur();*/
-echo "--------------------------------------------";
+
+
+echo" les Acteurs ayant incarné Batman sont: <br>"; 
+
 $role1->afficherRole();
 /*$casting1->getCasting();*/
 /*$film1->afficherInfo();*/
