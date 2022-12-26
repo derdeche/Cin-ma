@@ -31,20 +31,90 @@ require_once "Casting.php";
 $real1 = new Réalisateur(' Tim ', ' Burton ', ' male ', ' 25 août 1958 ');
 $real2 = new Réalisateur(' Joel ', ' Schumacher ', ' male ', ' 29 août 1939 ' );
 $real3 = new Réalisateur(' Christopher ', '  Nolan ', ' male ', ' 30 juillet 1970 ' );
-$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );
-$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );
-$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );
-$real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );
-$real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );
-$real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );
+/*$real4 = new Réalisateur(' Sam ', '  Raimi ', ' male ', ' 23 octobre 1959 ' );*/
+/*$real5 = new Réalisateur(' Marc ', '  Webb ', ' male ', ' 31 août 1974 ' );*/
+/*$real6 = new Réalisateur(' Brian ', '  De Palma ', ' male ', ' 11 septembre 1940 ' );*/
+/*$real7 = new Réalisateur(' John ', '  Woo ', ' male ', ' 1 mai 1946 ' );*/
+/*$real7 = new Réalisateur(' JJ ', '  Abrams ', ' male ', ' 27 juin 1966 ' );*/
+/*$real8 = new Réalisateur(' Brad ', '  Bird ', ' male ', ' 24 septembre 1957 ' );*/
 
-$acteur1 = new Acteur ('')
+/*$film2 = new film ('Batman Forever ','19 juillet 1995','122',$real2,$genre2, $acteur2);*/
+/*$film3 = new film ('Batman et Robin ','20 juin 1997','125',$real2,$genre3, $acteur3);*/
+/*$film4 = new film ('Batman Begins ', '15 juin 2005' ,'140',$real3,$genre4, $acteur4);*/
+
+$acteur1 = new acteur (' Michael ',' Keaton ', 'Male','5 septembre 1951');
+$acteur2 = new acteur (' Val ',' Kilmer ','Male','31 décembre 1959');
+$acteur3 = new acteur (' George ',' Clooney ', 'Male','6 mai 1961');
+$acteur4 = new acteur ('christian',' Bale', 'Male','30 janvier 1974');
+
+$genre1 = new genre('Action');
+$genre2 = new genre('Adventure');
 
 
-$action = new Genre ('action');
+$role1 = new role('Batman');
 
-$film1 = new Film('Batman le défi', '15 juillet 1992.', 126, $real1, $action,$acteur1);
 
-echo $film1;
+$film1 = new film (' Batman  le défi ','15 juillet 1992',126,$real1,$genre1, $acteur1);
+$film2 = new film ('Batman Forever ','19 juillet 1995',122, $real2,$genre1, $acteur1);
+$film3 = new film ('Batman et Robin ','20 juin 1997',125,$real2,$genre2, $acteur1);
+$film4 = new film ('Batman Begins ','15 juin 2005',140,$real3,$genre2,$acteur3);
+
+$casting1 = new Casting($role1,$acteur1,$film1);
+$casting2 = new casting($role1,$acteur1,$film2);
+$casting3 = new Casting($role1,$acteur3,$film3);
+$casting4 = new Casting($role1,$acteur4,$film4);
+
+
+
+
+
+
+echo "Filmograhpie du Réalisateur 1: <br>";
+
+echo $film1->getInfofilm();
+
+/*$real1->afficherfilm();*/
+echo"----------------------------------------------"."<br>";
+
+echo "Filmograhpie du Réalisateur 2: <br>";
+
+echo $film2->getInfofilm();
+
+echo"----------------------------------------------"."<br>";
+
+$real2->afficherfilm();
+
+echo"----------------------------------------------"."<br>";
+
+echo " Filmograhpie de l'acteur Keaton Michael : <br>";
+
+$acteur1->afficherActeur();
+
+echo "--------------------------------------------"."<br>";
+/*$casting1->getCasting();
+/*$genre2->afficherGenre();
+$acteur2->afficherActeur();*/
+
+
+echo" les Acteurs ayant incarné Batman sont: <br>"; 
+
+$role1->afficherRole();
+/*$casting1->getCasting();*/
+/*$film1->afficherInfo();*/
+/*$genre1->afficherGenre();*/
+
+/*$casting1->getCasting();*/
+/*$genre1->afficherGenre();*/
+
+
+
+
+
+
+
+
+
+
+
 
 
