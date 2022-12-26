@@ -1,69 +1,48 @@
 <?php
-class acteur extends Personne
+class Acteur extends Personne
 {
 
-    private array $_films;
+    private array $_casting;
 
 
-public function __construct($nom,$prenom, $sexe, $datenaissance)
+    public function __construct($nom,$prenom, $sexe, $datenaissance)
 {
     parent::__construct($nom,$prenom, $sexe, $datenaissance);
 
-    $this->_films = [];
+    $this->_casting = [];
 }
 
-public function addFilm($film)
+    public function addCasting($casting)
 {   
  
-    $this->_films[]= $film;
+    $this->_casting[]= $casting;
 } 
 
-public function getNom()
-{
-    return $this->_nom;
-}
 
-public function setNom($nom)
-{
-    $this->_nom = $nom;
-    return $this;
-}
-
-public function getPrenom()
-{
-    return $this->_prenom;
-}
-
-public function setPrenom($prenom)
-{
-    $this->_prenom = $prenom;
-    return $this;
-}
-
-public function getSexe()
-{
-    return $this->_sexe;
-}
-
-public function setSexe($sexe)
-{
-    $this->_sexe = $sexe;
-    return $this;
-}
-
-public function getDatenaissance()
-{
-    return $this->_datenaissance;
-}
-
-public function setDatenaissance($datenaissance)
-{
-    $this->_datenaissance = $datenaissance;
-    return $this;
-}
-
-public function __toString()
+    public function __toString()
 {
     return $this->getNom()." ".$this->getPrenom()." ".$this->getSexe()." ".$this->getDatenaissance();
 }
+
+                       /*public function affichage casting acteur*/
+    public function afficherActeur(){
+
+    echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a joué dans les films :<br>";
+
+    foreach($this->_casting as $casting)
+    {
+
+        echo $casting->getFilm();
+
+    }
+
+        echo " dans lequel il incarne le role de " .$casting->getRole()."<br>";
+
+}  
+    
+ 
+ 
+    
+
+
 }
