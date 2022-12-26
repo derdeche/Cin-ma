@@ -39,28 +39,13 @@ public function getDatenaissance()
     return $this->_datenaissance;
 }
 
-<<<<<<< HEAD
+
                 /* Affichage info Acteur*/
 public function __toString()
 {
     return $this->getNom(). $this->getPrenom()." "."Né le". $this->getDatenaissance();
 }
-=======
 
-public function __toString()
- {
-    return $this->getNom(). $this->getPrenom()." "."Né le". $this->getDatenaissance();
- }
-
-
-
-
-
-
-
-
-
->>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
 
 
 }

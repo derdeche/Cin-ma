@@ -37,14 +37,7 @@ class Genre
         }
     }
 
-    public function afficherGenre()
-    {
-        echo 'les films du genre '. $this." "."sont : " ."<br>";
-        foreach($this->_films as $film)
-        {
-            echo $film."<br>";
-        }
-    }
+   
 
     
 

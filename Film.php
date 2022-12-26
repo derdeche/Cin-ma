@@ -59,10 +59,9 @@ public function getGenre()
     return $this->_genre;
 }
 
-<<<<<<< HEAD
+
                        /* Affichage info film*/
-=======
->>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
+
 public function getInfofilm()
 {
     return "Titre du film : ". $this->_titrefilm ."<br>". "Date de sortie :  ". $this->_datesortie."<br>"." Durée :  " .$this->getDuree()."min"."<br>" .$this->getUnirealisateur();
