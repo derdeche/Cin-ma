@@ -24,11 +24,8 @@ class Acteur extends Personne
     return $this->getNom()." ".$this->getPrenom()." ".$this->getSexe()." ".$this->getDatenaissance();
 }
 
-<<<<<<< HEAD
-                       /*public function affichage casting acteur*/
-=======
 
->>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
+                       /*public function affichage casting acteur*/
     public function afficherActeur(){
 
     echo "<br> L'acteur " .$this->getPrenom()." ".$this->getNom(). " a joué dans les films :<br>";
