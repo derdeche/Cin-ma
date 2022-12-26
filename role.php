@@ -28,7 +28,10 @@ public function __toString()
     return $this->getRole();
 }
 
+<<<<<<< HEAD
                  /* Affichage des Roles joués par l'acteur*/
+=======
+>>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
 public function afficherCasting()
 {
     echo 'l acteur' .$this. 'a  joué le role de'. $this->getRole();
@@ -36,9 +39,16 @@ public function afficherCasting()
     {
         echo $casting."<br>";
     }
+<<<<<<< HEAD
 }
 
                  /*Affichage des Acteurs qui ont joués tels Role*/
+=======
+
+    
+}
+
+>>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
 public function afficherRole(){
 
     echo "<br> Le role  ".$this. " a été joué par :<br>";

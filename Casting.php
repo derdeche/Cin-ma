@@ -39,7 +39,11 @@ public function getActeur()
 {
     return "L'acteur". $this->getActeur() . "a joué le role de " . $this->getRole() ."dans". $this->getFilm();
 }*/
+<<<<<<< HEAD
                  /* Affichage casting Acteur*/
+=======
+
+>>>>>>> 163a9f5e0ee2fa6a07c9018394560bf6129367fc
 public function getCasting()
 {
     echo "Dans le film".$this->getFilm()."L'acteur". $this->getActeur() . "a joué le role de " . $this->getRole() ."<br>";
